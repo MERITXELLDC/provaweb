@@ -1,0 +1,218 @@
+/* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+/* RESETEO LIMITADO DE PROPIEDADES */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+    
+}
+
+/* Estilo para las fuentes en toda la página */
+body {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+}
+
+/* Establecemos el centrado y las dimensiones de los elementos principales */
+nav,.container,footer {
+  max-width: 1200px;
+  min-width: 576px;
+  margin:0px auto;
+}
+
+
+
+/* Estilos para el menú principal */
+nav {
+  background-color: #1258DC;
+  color: #FB8604;
+  font-size: 1.4;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow-y: auto;
+  top: 0px;
+  z-index: 100;
+}
+
+nav div {
+  float: left;
+  margin-left: 20px;
+  padding: 5px;
+
+}
+nav div:hover {
+  background-color: #144EB8;
+}
+/* Estilos para la cabecera */
+header {
+  position: relative;
+  text-align: center;
+}
+
+/* Fondo de la cabecera */
+header img {
+  opacity: 0.7;
+  width: 100%;
+}
+
+
+/* Call for action para Comprar */
+aside {
+  background-color: #1258DC;
+  border-radius: 20px;
+  color: #FB8604;
+  padding: 10px;
+  position: absolute;
+  right: 15%;
+  text-align: center;
+  top: 30%;
+  width: 20%;
+}
+
+aside a {
+  background-color: #FB8604;
+  border-radius: 10px;
+  font-size: 1em;
+  color: #F7E9D4;
+  margin-top: 40px;
+  padding: 10px;
+  text-decoration: none;
+}
+aside a:hover {
+  font-size: 2em;
+}
+
+aside h3 {
+  margin: 20px 0px;
+}
+
+/* Elemento principal con las 3 cards */
+main {
+  margin: 0px auto;
+  width: 80%;
+}
+main h1 {
+  text-align: center;
+}
+
+/* Línea separados de elementos */
+main h1::after,
+main:after {
+  background-color: #FB8604;
+  display: block;
+  content: " ";
+  height: 2px;
+  width: 30%;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+/* Estilos para la zona de las cards */
+.cards {
+  overflow-y: auto;
+}
+.cards .card {
+  float: left;
+  padding: 10px;
+  text-align: center;
+  width: 33%;
+}
+
+.cards .card img {
+  width: 80%;
+}
+
+
+/* Sección con la botella y los tres párrafos descriptivos */
+.crucero {
+  margin: 30px auto;
+  overflow-y: auto;
+  width: 90%;
+}
+
+.crucero img {
+  float: left;
+  padding-right: 30px;
+  margin-left: 10%;
+  width: 30%;
+}
+
+.crucero div {
+  float: right;
+  margin-top: 20px;
+  text-align: justify;
+  color: #3333ff;
+  width: 60%;
+}
+
+/* Mostrarmos la primera letra con un borde diferente */
+.crucero div::first-letter {
+  border-right: 1px solid #FB8604;
+  border-bottom: 1px solid #FB8604;
+  color: #FB8604;
+  font-size: 2em;
+  font-weight: bolder;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+
+/* Estilos para la galería de imágenes */
+.gallery {
+  clear: both;
+  margin: 10px auto;
+  overflow-y: auto;
+  width: 100%;
+}
+.gallery img {
+  float: left;
+  padding: 15px;
+  width: 33%;
+}
+
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #091834;
+  clear: both;
+  color: #FB8604;
+  font-weight: bolder;
+  font-size: 0.8;
+  margin-top: 20px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+footer address {
+  float: left;
+  width: 20%;
+}
+
+footer div {
+  float: left;
+  text-align: center;
+  width: 60%;
+}
+
+footer section {
+  float: left;
+  text-align: center;
+  width: 20%;
+}
+
+footer img {
+  width: 12%;
+}
